@@ -1,0 +1,6 @@
+! Google - remove cookie-consent-popup and restore scroll functionality
+google.*##.wwYr3.aID8W.bErdLd
+google.*##.aID8W.m114nf.t7xA6
+google.*##div[jsname][jsaction^="dg_close"]
+google.*##html:style(overflow: visible !important;)
+google.*##.widget-consent-fullscreen.widget-consent
