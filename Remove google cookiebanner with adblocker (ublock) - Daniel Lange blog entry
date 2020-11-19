@@ -1,4 +1,4 @@
-! Google - remove cookie-consent-popup and restore scroll functionality
+! Google - remove cookie-consent-popup and restore scroll functionality - from Daniel Langes blogpost 
 google.*##.wwYr3.aID8W.bErdLd
 google.*##.aID8W.m114nf.t7xA6
 google.*##div[jsname][jsaction^="dg_close"]
