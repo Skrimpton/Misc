@@ -1,0 +1,6 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"); /* only needed once */
+  
+#nav-bar toolbarspring {
+    min-width: 10px !important;
+    max-width: 20px !important;
+}
