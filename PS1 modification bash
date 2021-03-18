@@ -1,1 +1,1 @@
-PS1='\n\e[0;30m\e[42m \D{%A %d %B} - \t\e[m \n\[$(printf "\033[1;4;33m%-${COLUMNS}s\033[00m" " ")\]\n\n\e[1;32mUser       \u\e[m\n\e[1;35mComputer   \h\e[m\nDirectory  \w\n\[$(printf "\033[1;4;33m%-${COLUMNS}s\033[00m" " ")\]\[$(tput sgr0)\]\n\n$ '
+PS1='\n\e[6;33m\D{%A %d %B} - \t\e[m \n\[$(printf "\033[0;4;33m%-${COLUMNS}s\033[00m" " ")\]\n\n\e[1;32mUser                  \u\e[m\n\e[1;35mComputer              \h\e[m\nCurrent Directory     \w\n\[$(printf "\033[0;4;33m%-${COLUMNS}s\033[00m" " ")\]\[$(tput sgr0)\]\n\n$ '
