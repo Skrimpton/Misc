@@ -1,0 +1,1 @@
+export PS1="\[$(tput smso)\]\n\D{%A %d %B} - \t\[$(tput rmso)\]\n\[$(printf "\033[1;4;33m%-${COLUMNS}s\033[00m" " ")\]\n\nUser       \u\nComputer   \h\n\nCurrent working directory:\n\[$(tput smul)\]\w\[$(tput rmul)\]\n\n$ \[$(tput sgr0)\]"
