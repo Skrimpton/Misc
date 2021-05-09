@@ -1,0 +1,13 @@
+#!/bin/bash
+
+sudo sysctl vm.swappiness=10
+sleep 0.5
+sudo systemctl enable fstrim.timer
+sleep 0.5
+sudo pacman --noconfirm -S gufw
+sleep 0.5
+sudo systemctl enable --now ufw
+sleep 0.5
+sudo systemctl mask geoclue.service
+sleep 0.5
+sudo systemctl disable geoclue.service
