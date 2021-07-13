@@ -34,19 +34,37 @@ https://rainy.ws/is-this-legal/
 
 
 
+**MAKE COOL CUSTOM PURPLE RiGHT-CLICK-MEMOPAD-COPY-PASTEABLE TEXT**
+
+Format:
+```[where:My cool memopadable text]```
+
+Copy text from box below **-->** Edit the message in memopad or chat **-->** Replace the big W with a small w **-->** Rack up cool-guy points in 3lfg
+``` [Where:My cool memopadable text]```
+
+Related example:
+
+Macro to mark selected NPC in chat (does not work as chat command). 
+*/legion can be replaced with other chat-channel*
+```/legion [where:[Target]]
+
+note: will also work with some monsters```
+
+
+
 
 **__MACRO COMMANDS__**
 (edited from powerbook and others):
 
 Default Macro Window hotkey: 
 ```U```
-
 **/Delay** X 
+
+*Delay is measured in seconds*
 
 *Example:* 
 ```/Delay 3
-This will cause the Macro to wait 3 seconds before performing the next item on the script.```
-
+Macro will wait 3 seconds before performing the next command```
 **/Skill**
 
 *You can drag the skill from Skills-list into the Enter Macro Command-field or type the name of the skill*
@@ -56,8 +74,7 @@ This will cause the Macro to wait 3 seconds before performing the next item on t
 /Delay 1
 /Blessing of Health 1
 
-Result: target blessed with both cleric buffs and only one quickbar slot used
-```
+Result: target blessed with both cleric buffs and only one quickbar slot used```
 **/Use**
 
 *Type [The Item Name] accurately - Or just drag-n-drop item into edit-field*
@@ -77,8 +94,8 @@ Result: Opens Lazuli Ore bundles. Avoids carpal tunnel syndrome```
 /Use Greater Running Scroll
 
 Result: Uses a Healing Root to cure altered state, then immediately uses Greater Life Serum and Greater Running Scroll.```
-
 **/Quickbar**
+
 *You can also  drag-n-drop  from quickbar into edit-field*
 
 *Example:*
@@ -87,7 +104,6 @@ Result: Uses a Healing Root to cure altered state, then immediately uses Greater
 /Quickbar 1 0 2
 
 Result: Triggers quickbar slot default bound to number-keys (not numpad-keys) 1 and 2 with delay (for cast-time) between```
-
 **/Select** 
 
 *You can select NPCName, CharacterName, ResourceName*
@@ -116,30 +132,12 @@ Clicking the skills have in my experience been a faster/safer option.
 /Skill Chastise I
 Delay 1
 /Select [TargetOfTarget]```
-
 **/Fly**
 
-*Useful as a macro connected to shortcut so fly and land can be bound to a single hotkey*
+*Useful as a macro connected to shortcut/keybinding. 
+Fly and land can then be toggled on/off*
 
 *Example*
 ```/Fly
 
 Note: Yeah, it is what it is```
-
-
-
-**MAKE COOL CUSTOM PURPLE RiGHT-CLICK-MEMOPAD-COPY-PASTEABLE TEXT**
-
-Format:
-```[where:My cool memopadable text]```
-
-Copy text from box below **-->** Edit the message in memopad or chat **-->** Replace the big W with a small w **-->** Rack up cool-guy points in 3lfg
-``` [Where:My cool memopadable text]```
-
-Related example:
-
-Macro to mark selected NPC in chat (does not work as chat command). 
-*/legion can be replaced with other chat-channel*
-```/legion [where:[Target]]
-
-note: will also work with some monsters```
