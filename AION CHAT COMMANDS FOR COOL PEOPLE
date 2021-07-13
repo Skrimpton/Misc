@@ -1,0 +1,14 @@
+**Open instance wait-time list**
+```/checkEntry```
+
+**Print game and realtime in chat**
+```/Time```
+
+**Start/Stop flying**
+```/Fly
+
+(Very) Useful as macro - flight and landing can then can be bound to a single use shortcut/hotkey. Downside: uses up a quickbar slot```
+
+**Trade with selected target (player)**
+```/Trade```
+
