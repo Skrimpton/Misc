@@ -128,13 +128,18 @@ Note: Yeah, it is what it is```
 
 
 
+**MAKE COOL CUSTOM PURPLE RiGHT-CLICK-MEMOPAD-COPY-PASTEABLE TEXT**
 
-
-
-__**MAKE COOL PURPLE MEMOPAD-COPY-PASTEABLE TEXT FOR CHAT**__
-
+Format:
 ```[where:My cool memopadable text]```
 
-Copy text from box below > Edit the message in memopad > Replace the big W with a small w > Rack up cool-guy points in 3lfg
-*Paste it to memopad 2x on different lines, then just edit the one you wanna cut. It will turn purple when the W is uncapitalized/made socialist*
+Copy text from box below **-->** Edit the message in memopad or chat **-->** Replace the big W with a small w **-->** Rack up cool-guy points in 3lfg
 ``` [Where:My cool memopadable text]```
+
+Related example:
+
+Macro to mark selected NPC in chat (does not work as chat command). 
+*/legion can be replaced with other chat-channel*
+```/legion [where:[Target]]
+
+note: will also work with some monsters```
