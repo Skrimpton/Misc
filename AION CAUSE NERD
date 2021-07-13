@@ -117,7 +117,14 @@ Clicking the skills have in my experience been a faster/safer option.
 Delay 1
 /Select [TargetOfTarget]```
 
+**/Fly**
 
+*Useful as a macro connected to shortcut so fly and land can be bound to a single hotkey
+
+*Example*
+```/Fly
+
+Note: Yeah, it is what it is```
 
 
 
