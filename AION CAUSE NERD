@@ -86,7 +86,10 @@ Put longer than necessary delay so macro won't get thrown off by the failbar.
 "12" is just an example - find out what works for you```
 
 *Example 2:*
-```/Select Kromede
+```This is more a proof of concept than a recommendation.
+Clicking the skills have in my experience been a faster/safer option. 
+
+/Select Kromede
 /Skill Summon Holy Servant II
 /Delay 1
 /Skill Chastise I
