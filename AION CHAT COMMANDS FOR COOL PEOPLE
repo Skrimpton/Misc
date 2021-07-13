@@ -37,7 +37,7 @@ For clicked/selected Player:
 
 **__Chat commands usable on a clicked/selected Player__**
 ```These also work if you type the name of the player after the command.
-Note: This might not be comprehensive list.
+Note: This might not be a complete list of theones you can use, olny the ones I got to work.
 
 Request Trade: (You can also use shortcut ctrl+t)
 /Trade
@@ -47,3 +47,4 @@ Send friend request:
 
 Challenge to duel:
 /Duel```
+
