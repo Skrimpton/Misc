@@ -51,11 +51,11 @@ Result: target blessed with both cleric buffs and only one quickbar slot used
 Result: Opens Lazuli Ore bundles. Avoids carpal tunnel syndrome```
 
 *Example 2:*
-```/Use Greater Healing Potion
+```/Use Healing Root
 /Use Greater Life Serum
 /Use Greater Running Scroll
 
-Result: Uses a Healing potion to cure altered state, then immediately uses life serum and running scroll.```
+Result: Uses a Healing Root to cure altered state, then immediately uses Greater Life Serum and Greater Running Scroll.```
 
 **/Quickbar**
 *You can also  drag-n-drop  from quickbar into edit-field*
