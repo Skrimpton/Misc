@@ -1,0 +1,105 @@
+**__BOSS SPAWNS__**
+http://mmopager.blogspot.com/2015/07/aion-online-elyos-map-boss-location-and.html 
+```List of rarespawns and their drops```
+**__AIONLIFE__**
+http://aion.mmorpg-life.com/
+```Gathering maps and quest guides (some Q's have pictures+walkthrough)```
+**__AIONMAPS PROJECT__**
+https://aionmaps.com/
+```Another aether/essencetapping-map site. Is made for/aimed at regular aion, not classic - but can still be useful```
+**__AION POWERBOOK__**
+https://aionpowerbook.com/powerbook/Main_Page
+```Lots of info.```
+
+
+
+
+**__MACRO COMMANDS__**
+(edited from powerbook and others):
+
+Default Macro Window hotkey: 
+```U```
+
+**/Delay** X 
+
+*Example:* 
+```/Delay 3
+This will cause the Macro to wait 3 seconds before performing the next item on the script.```
+
+**/Skill**
+
+*You can drag the skill from Skills-list into the Enter Macro Command-field or type the name of the skill*
+
+*Example:*
+```/Skill Blessing of Rock I
+/Delay 1
+/Blessing of Health 1
+
+Result: target blessed with both cleric buffs and only one quickbar slot used
+```
+**/Use**
+
+*Type [The Item Name] accurately - Or just drag-n-drop item into edit-field*
+
+*Example 1:*
+```/Use Big Lazuli Ore
+/Delay 3
+/Use Big Lazuli ore
+/Delay 3
+/Use Big Lazuli ore
+
+Result: Opens Lazuli Ore bundles. Avoids carpal tunnel syndrome```
+
+*Example 2:*
+```/Use Greater Healing Potion
+/Use Greater Life Serum
+/Use Greater Running Scroll
+
+Result: Uses a Healing potion to cure altered state, then immediately uses life serum and running scroll.```
+
+**/Quickbar**
+*You can also  drag-n-drop  from quickbar into edit-field*
+
+*Example:*
+```/Quickbar 1 0 1
+/Delay 3
+/Quickbar 1 0 2
+
+Result: Triggers quickbar slot default bound to number-keys (not numpad-keys) 1 and 2 with delay (for cast-time) between```
+
+**/Select** 
+
+*You can select NPCName, CharacterName, ResourceName*
+
+*Example 1:*
+```/Select Adamantium
+/Attack
+/Delay 12
+/Select Adamantium
+/Attack
+/Delay 12
+/Select Adamantium
+/Attack
+/Delay 12
+
+Put longer than necessary delay so macro won't get thrown off by the failbar. 
+"12" is just an example - find out what works for you```
+
+*Example 2:*
+```/Select Kromede
+/Skill Summon Holy Servant II
+/Delay 1
+/Skill Chastise I
+Delay 1
+/Select [TargetOfTarget]```
+
+
+
+
+
+__**MAKE COOL PURPLE MEMOPAD-/ COPYABLE TEXT IN CHAT***__
+
+```[where:My cool memopadable text]```
+
+Kopier denne til memo og edit text + gjør W'en liten så blir den lilla og du får en million cool-guy-points for det du poster i 3lfg
+``` [Where:My cool memopadable text]```
