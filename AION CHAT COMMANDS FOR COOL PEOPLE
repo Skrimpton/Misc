@@ -1,14 +1,24 @@
 **Open instance wait-time list**
 ```/checkEntry```
-
 **Print game and realtime in chat**
 ```/Time```
-
 **Start/Stop flying**
 ```/Fly
 
 (Very) Useful as macro - flight and landing can then can be bound to a single use shortcut/hotkey. Downside: uses up a quickbar slot```
-
 **Trade with selected target (player)**
 ```/Trade```
+**Befriend target (players)**
+```/Friend```
+**Roll dice**
+```
+Note: You can choose a number between 2-100 000.
+
+/Roll 1
+
+Result: You rolled the dice and got 69 (max 100 0000)
+
+/Dice 2
+
+Result: You rolled the dice and got 1 (max 2)```
 
