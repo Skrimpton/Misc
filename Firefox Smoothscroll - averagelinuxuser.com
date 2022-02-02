@@ -3,8 +3,8 @@ FIREFOX SMOOTH-SCROLLING - from https://averagelinuxuser.com/firefox-smooth-scro
 
 ###############################################################
 
-
 about:config
+
 
 1) ---------------------------------------------
 
