@@ -1,0 +1,94 @@
+#!/bin/zsh
+
+# DECLARE ZSHELL FUNCTION TO DETERMINE WHICH TERMINAL EMULATOR IS BEING USED
+
+getterminalemulator ()
+{
+    if [[ $TTY = "/dev/tty"* ]]; then
+        echo "linux-console"
+        return
+    fi
+    local pid=$$ name=''
+    while true; do
+        proc_stat=(${(@f)$(</proc/${pid}/stat)})
+        name=${proc_stat[2]//[()]/}
+        case "${name}" in
+            gnome-terminal|konsole|rxvt|xterm)
+                echo "${name}"; return ;;
+            python*)
+                local cmdline=(${(@f)$(</proc/${pid}/cmdline)})
+                if [[ "$cmdline" =~ "\\bguake.main\\b" ]]; then
+                    echo "guake"; return
+                fi
+                ;;
+        esac
+        if test "$pid" = "1" -o "$pid" = ""; then
+            echo "unknown"
+            return
+        fi
+        pid=${proc_stat[4]}
+    done
+}
+
+# CHECK IF SCRIPT IF BEING CALLED FROM KONSOLE
+[[ $(getterminalemulator) = "konsole" ]] && (
+
+split_konsole_vertical()
+{
+    konsole_pid="$(qdbus | grep "konsole" | sed 's/\ //g')"
+    qdbus "$konsole_pid" /konsole/MainWindow_1 org.kde.KMainWindow.activateAction split-view-left-right
+}
+
+split_konsole_horizontal ()
+{
+    konsole_pid="$(qdbus | grep "konsole" | sed 's/\ //g')"
+    qdbus "$konsole_pid" /konsole/MainWindow_1 org.kde.KMainWindow.activateAction split-view-top-bottom
+}
+
+# ACCEPTED ARGUMENTS FOR SCRIPT
+case $1 in
+    h | -h | --horizontal | -horizontal | - | 2)
+    split_konsole_horizontal &> /dev/null
+    ;;
+    v | -v | --vertical | -vertical | + | l | 1)
+    split_konsole_vertical &> /dev/null
+    ;;
+    *)
+    split_konsole_vertical &> /dev/null
+    ;;
+esac
+
+# clear
+
+# ... ELSE PRESUME IT'S YAKUAKE
+) || (
+
+
+split_yakuake_vertical ()
+{
+    TERMINAL_ID_0=$(qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.activeTerminalId)
+    qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.splitTerminalLeftRight "$TERMINAL_ID_0"
+}
+
+split_yakuake_horizontal ()
+{
+    TERMINAL_ID_0=$(qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.activeTerminalId)
+    qdbus org.kde.yakuake /yakuake/sessions org.kde.yakuake.splitTerminalTopBottom "$TERMINAL_ID_0"
+}
+
+# ACCEPTED ARGUMENTS FOR SCRIPT
+case $1 in
+    h | -h | --horizontal | -horizontal | - | 2)
+    split_yakuake_horizontal &> /dev/null
+    ;;
+    v | -v | --vertical | -vertical | + | l | 1)
+    split_yakuake_vertical &> /dev/null
+    ;;
+    *)
+    split_yakuake_vertical &> /dev/null
+    ;;
+esac
+
+# clear
+)
+
