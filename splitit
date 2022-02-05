@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+# Zshell-script that splits konsole or yakuake
+
 # DECLARE ZSHELL FUNCTION TO DETERMINE WHICH TERMINAL EMULATOR IS BEING USED
 
 getterminalemulator ()
