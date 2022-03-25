@@ -1,10 +1,19 @@
-FIREFOX SMOOTH-SCROLLING - from https://averagelinuxuser.com/firefox-smooth-scrolling/
+# Firefox settings
+
+## Open stuff in tabs intead of the same window:
+
+#### From URL-/Omnibar
+browser.urlbar.openintab
+
+#### From Search-bar
+browser.search.openintab
+
+#### Clicked bookmarks
+browser.tabs.loadBookmarksInTabs
 
 
-###############################################################
 
-about:config
-
+## FIREFOX SMOOTH-SCROLLING - from https://averagelinuxuser.com/firefox-smooth-scrolling/
 
 1) ---------------------------------------------
 
@@ -43,4 +52,3 @@ Finally, restart Firefox and you will experience a faster and
 smoother scrolling. So, you can quickly get to the top and to the bottom
  of a web-page just with the mouse wheel and a web-page will move 
 smoothly.
-
