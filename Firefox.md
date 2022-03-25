@@ -3,53 +3,37 @@
 ## Open stuff in tabs intead of the same window:
 
 #### From URL-/Omnibar
+```bash
 browser.urlbar.openintab
-
+```
 #### From Search-bar
+```bash
 browser.search.openintab
-
+```
 #### Clicked bookmarks
+```bash
 browser.tabs.loadBookmarksInTabs
+```
+
+#
+## [FIREFOX SMOOTH-SCROLLING](https://averagelinuxuser.com/firefox-smooth-scrolling/)
 
 
+#### Set line_scroll_amount to somewhere between 1 and 10
 
-## FIREFOX SMOOTH-SCROLLING
-### from https://averagelinuxuser.com/firefox-smooth-scrolling/
+```bash 
+mousewheel.min_line_scroll_amount
+```
 
-1) ---------------------------------------------
+#### Set to smoothScroll.mousewheel between 500 and 2000, whatever feels nice
 
-mousewheel.min_line_scroll_amount. 
-
-change the step of the scrolling. 
-
- 
-Set it to 5 or 10
-
-________________________________________________
-
-2) ---------------------------------------------
-
+```bash 
 general.smoothScroll.mouseWheel.durationMaxMS
+```
 
-set to 
+#### Same as above, whatever feels nice
 
-500
-________________________________________________
-
-3) ---------------------------------------------
-
-general.smoothScroll.mouseWheel.durationMinMS 
-
-set to
-
-400
-________________________________________________
-
-This and the previous settings will adjust the smoothness.
-
-###############################################################
-
-Finally, restart Firefox and you will experience a faster and 
-smoother scrolling. So, you can quickly get to the top and to the bottom
- of a web-page just with the mouse wheel and a web-page will move 
-smoothly.
+```bash
+general.smoothScroll.mouseWheel.durationMinMS
+```
+#
