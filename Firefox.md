@@ -13,7 +13,8 @@ browser.tabs.loadBookmarksInTabs
 
 
 
-## FIREFOX SMOOTH-SCROLLING - from https://averagelinuxuser.com/firefox-smooth-scrolling/
+## FIREFOX SMOOTH-SCROLLING
+### from https://averagelinuxuser.com/firefox-smooth-scrolling/
 
 1) ---------------------------------------------
 
