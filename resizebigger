@@ -1,0 +1,20 @@
+#!/bin/zsh
+
+    xSize=$(xdotool getactivewindow getwindowgeometry | grep Geometry | awk -F ': ' '{print $2}' | cut -d 'x' -f 1)
+    ySize=$(xdotool getactivewindow getwindowgeometry | grep Geometry | awk -F ': ' '{print $2}' | cut -d 'x' -f 2)
+
+
+    stepsize=35
+
+    for x in {1..$stepsize}
+    do
+        ((xSize++))
+    done
+
+    for y in {1..$stepsize}
+    do
+        ((ySize++))
+    done
+
+    xdotool getactivewindow windowsize $xSize $ySize
+
