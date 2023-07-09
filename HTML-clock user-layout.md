@@ -1,3 +1,35 @@
+#### Both are slightly modified versions of: *Date&Time grid w/dayname* 
+##### "Uke" is norwegian for "week"
+
+# Simple 
+```html
+<html>
+<body>
+<table style="border: none;" align="center">
+    <tr>
+        <!-- clock -->
+        <td valign="middle" align="center" style="padding-right: 8px;">
+            <span style="font-size: 55px; color:#FFff006e;">{hh}</span>
+            <span style="font-size: 50px; color:#{flip:00:FF}ff006e;">: </span>
+            <span style="font-size: 55px; color: white;">{ii}</span>
+        </td>
+        <!-- verical divider -->
+        <td rowspan="2" width="1" style="vertical-align: middle; background-color: #FFff006e;">
+            <span style="font-size: 25px;"><br /><br /></span>
+        </td>
+        <!-- calendar -->
+        <td rowspan="2" valign="middle" align="center" style="padding-left: 8px;">
+            <span style="font-size: 16px; color:#FFff006e;">{DDD:U}<br /></span>
+            <span style="font-size: 16px; color: white;">{dd} {MMM:U}<br />{yyyy}<br /></span>
+            <span style="font-size: 16px; color:#FFff006e;">Uke {wy}</span>
+        <td>
+    </tr>
+</table>
+</body>
+</html>
+```
+# Lotsa bullshit
+```html
 <html>
 <body>
 <table style="border: none;" align="center">
@@ -31,3 +63,4 @@
 </table>
 </body>
 </html>
+```
