@@ -1,6 +1,6 @@
 # Streaming audio from Linux to Windows
  <div align="right">
-      https://thomasjepp.uk/2015/05/31/streaming-audio-from-linux-to-windows.html<vr>
+      https://thomasjepp.uk/2015/05/31/streaming-audio-from-linux-to-windows.html<br>
       2015-05-31
  </div>
  
