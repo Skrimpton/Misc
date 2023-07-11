@@ -52,7 +52,7 @@ Setting up the Linux side of this is really easy:
     ```
     default-server = 192.168.1.1
     ```
-    * *Change 192.168.1.1 to the IP of your Windows machine*.
+    * *[Change 192.168.1.1 to the IP of your Windows machine](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#finding-the-ip-adress-for-the-server)*.
 
 4) Run:
     ```
