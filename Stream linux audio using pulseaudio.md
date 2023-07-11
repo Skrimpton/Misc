@@ -18,7 +18,7 @@ Having multiple PCs all needing to play audio is a pain - especially when you us
 
 This is how I used to stream audio from my NUC running Linux to my Windows desktop - where the headset was plugged in.
 
-* *Link and/or photo missing I guess. There is no further explanation*
+* *Link and/or photo missing, I guess. There is no further explanation as to "how"*
 <br>
 
 ## Options:
