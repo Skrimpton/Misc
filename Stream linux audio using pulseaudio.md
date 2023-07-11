@@ -44,34 +44,41 @@ Given these choices, I ended up using PulseAudio.
 
 Setting up the Linux side of this is really easy:
 
-1) Open 
-    ```
-    /etc/pulse/client.conf
-    ```
+1) Open
+   ```
+   /etc/pulse/client.conf
+   ```
 2) and add:
-    ```
-    default-server = 192.168.1.1
-    ```
-    * *[Change 192.168.1.1 to the IP of your Windows machine](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#finding-the-ip-adress-for-the-server)*.
+   ```
+   default-server = 192.168.1.1
+   ```
+   * *[Change 192.168.1.1 to the IP of your Windows machine](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#finding-the-ip-adress-for-the-server)*.
 
-4) Run:
-    ```
-    killall pulseaudio
-    ```
+3) Run:
+   ```
+   killall pulseaudio
+   ```
 <br>
 
 # Windows
 ## Finding the ip adress for the server
 1) Press the windows key
+   
 2) Type:
    ```
    cmd
    ```
-4) Open CMD and run:
+
+3) Open CMD and run:
    ```
    ipconfig
    ```
-5) Use the numbers on the line:
+4) Look for the block of addresses matching current/desired network
+   ```
+   Ethernet adapter Ethernet                      ← This is the block for cable
+   Ethernet adapter Wireless LAN adapter Wi-Fi    ← Would ofc be Wireless internet
+   ```
+5) Use the numbers from this line:
    ```
    IPv4 Address. . . . . . . . . . . : they.will.be.here
    ```
@@ -96,19 +103,32 @@ However, I found a much newer set of binaries from the X2Go project: http://code
        *  [direct link to zip](http://bosmans.ch/pulseaudio/pulseaudio-1.1.zip)
        *  https://www.freedesktop.org/wiki/Software/PulseAudio/Ports/Windows/Support/
      
-3) Extract it and copy the pulse folder to
+2) Extract it and copy the pulse folder to
     ```
     C:\pulse
     ```
-4) Create a config.pa file in that folder with these contents:
+3) Create a config.pa file in that folder with these contents:
     ```
     load-module module-native-protocol-tcp port=4713 auth-ip-acl=127.0.0.1;192.168.1.0/24
     load-module module-esound-protocol-tcp port=4714 auth-ip-acl=127.0.0.1;192.168.1.0/24
     load-module module-waveout
     ```
 
-6) Replace 192.168.1.0/24 with your local subnet.
-7) Test this setup by running:
+   * Replace 192.168.1.0/24 with your local subnet.
+     
+   * *or add others:*
+     ```
+     auth-ip-acl=127.0.0.1;192.168.0.0/24;10.0.0.0/24
+     ```
+   * *or allow all*
+      ```
+      auth-anonymous=1 
+      ```
+     * [source](https://www.freedesktop.org/wiki/Software/PulseAudio/Documentation/User/Modules/) - *do a page search for "auth-anonymous"*
+     * [example](https://openwrt.org/docs/guide-user/hardware/audio/pulseaudio#configuration)
+<br>
+
+4) Test this setup by running:
     ```
     c:\pulse\pulseaudio.exe -F config.pa
     ```
@@ -127,15 +147,15 @@ I use NSSM to run arbitrary programs as services.
 
 1) Download the latest version of NSSM.
    * https://nssm.cc/download
-3) Extract it and copy nssm.exe from the win32 folder to:
+2) Extract it and copy nssm.exe from the win32 folder to:
     ```
     c:\pulse
     ```
-4) Run:
+3) Run:
     ```
      c:\pulse\nssm.exe install PulseAudio
     ```
-5) Fill in the following details on the <ins>___Application___</ins>-tab
+4) Fill in the following details on the <ins>___Application___</ins>-tab
     * Path:
         ```
         c:\pulse\pulseaudio.exe
@@ -149,12 +169,12 @@ I use NSSM to run arbitrary programs as services.
         -F c:\pulse\config.pa
         ```
 
-6) On the Details tab, fill in:
+5) On the Details tab, fill in:
     * Display name:
       ```
       PulseAudio
       ```
-7) Now click <ins>___Install service___</ins>.
+6) Now click <ins>___Install service___</ins>.
 
 <br>
 
