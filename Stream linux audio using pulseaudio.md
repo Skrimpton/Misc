@@ -8,7 +8,7 @@
 * [PulseAudio on linux](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#pulseaudio-on-linux)
 * [PulseAudio on windows](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#pulseaudio-on-windows)
 * [NSSM and making a service](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#permanent-automatic-setup)
-  * [Start service](https://github.com/Skrimpton/Misc/main/blob/Stream%20linux%20audio%20using%20pulseaudio.md#finally-start-the-newly-installed-service)
+  * [Start service](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#finally-start-the-newly-installed-service)
 
 <br>
  
