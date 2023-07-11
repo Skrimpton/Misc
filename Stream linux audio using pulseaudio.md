@@ -31,7 +31,7 @@ Given these choices, I ended up using PulseAudio.
 
 ## PulseAudio on Linux
 
-### Setting up the Linux side of this is really easy:
+Setting up the Linux side of this is really easy:
 
 1) Open 
     ```
@@ -94,17 +94,20 @@ However, I found a much newer set of binaries from the X2Go project: http://code
 For a permanent setup we need to create a Windows service rather than running PulseAudio in a command prompt.
 
 I use NSSM to run arbitrary programs as services.
-  
+
+<br>
+
 1) Download the latest version of NSSM.
-2) Extract it and copy nssm.exe from the win32 folder to:
+   * https://nssm.cc/download
+3) Extract it and copy nssm.exe from the win32 folder to:
     ```
     c:\pulse
     ```
-3) Run:
+4) Run:
     ```
      c:\pulse\nssm.exe install PulseAudio
     ```
-4) Fill in the following details on the <ins>___Application___</ins>-tab
+5) Fill in the following details on the <ins>___Application___</ins>-tab
     * Path:
         ```
         c:\pulse\pulseaudio.exe
@@ -118,12 +121,12 @@ I use NSSM to run arbitrary programs as services.
         -F c:\pulse\config.pa
         ```
 
-5) On the Details tab, fill in:
+6) On the Details tab, fill in:
     * Display name:
       ```
       PulseAudio
       ```
-6) Now click <ins>___Install service___</ins>.
+7) Now click <ins>___Install service___</ins>.
 
 <br>
 
