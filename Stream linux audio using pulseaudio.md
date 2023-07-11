@@ -4,6 +4,14 @@
       2015-05-31
  </div>
  
+## Guide - Table of contents:
+* [PulseAudio on linux](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#pulseaudio-on-linux)
+* [PulseAudio on windows](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#pulseaudio-on-windows)
+* [NSSM and making a service](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#permanent-automatic-setup)
+  * [Start service](https://github.com/Skrimpton/Misc/edit/main/Stream%20linux%20audio%20using%20pulseaudio.md#finally-start-the-newly-installed-service)
+
+<br>
+ 
 ## Background
 
 Having multiple PCs all needing to play audio is a pain - especially when you use a headset.
