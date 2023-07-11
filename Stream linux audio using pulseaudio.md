@@ -6,10 +6,11 @@
  
 ## Guide - Table of contents:
 * [PulseAudio on linux](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#pulseaudio-on-linux)
-* [Find IP-Adress of server](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#finding-the-ip-adress-for-the-server)
-* [PulseAudio on windows](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#pulseaudio-on-windows)
-* [NSSM and making a service](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#permanent-automatic-setup)
-  * [Start service](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#finally-start-the-newly-installed-service)
+* [Windows](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#on-windows)
+  * [Find IP-Adress of server](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#finding-the-ip-adress-for-the-server)
+  * [PulseAudio on windows](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#pulseaudio-on-windows)
+  * [NSSM and making a service](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#permanent-automatic-setup)
+    * [Start service](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#finally-start-the-newly-installed-service)
 
 <br>
  
@@ -58,7 +59,7 @@ Setting up the Linux side of this is really easy:
     ```
 <br>
 
-# On windows
+# Windows
 ## Finding the ip adress for the server
 1) Press the windows key
 2) Type:
