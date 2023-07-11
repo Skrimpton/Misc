@@ -49,13 +49,29 @@ Setting up the Linux side of this is really easy:
     ```
     default-server = 192.168.1.1
     ```
-    * Change 192.168.1.1 to the IP of your Windows machine.
+    * *Change 192.168.1.1 to the IP of your Windows machine*.
 
-3) Run:
+4) Run:
     ```
     killall pulseaudio
     ```
 <br>
+
+# On windows
+## Finding the ip adress for the server
+1) Press the windows key
+2) Type:
+   ```
+   cmd
+   ```
+4) Open CMD and run:
+   ```
+   ipconfig
+   ```
+5) Use the numbers on the line:
+   ```
+   IPv4 Address. . . . . . . . . . . : they.will.be.here
+   ```
 
 ## PulseAudio on Windows
 
