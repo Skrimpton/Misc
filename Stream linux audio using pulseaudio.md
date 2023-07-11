@@ -62,7 +62,7 @@ However, I found a much newer set of binaries from the X2Go project: http://code
 1) Download pulseaudio-5.0-rev18.zip from either:
    * x2go
        *  http://code.x2go.org/releases/binary-win32/3rd-party/pulse/pulseaudio-5.0-rev18.zip
-       * [Zip from this github - incase x2go link dies](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio%20-%20pulseaudio-5.0-rev18%20%5Bd110723%20t055129%5D.zip)  
+       * [Zip from this github - if x2go link dies](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio%20-%20pulseaudio-5.0-rev18%20%5Bd110723%20t055129%5D.zip)  
    *  or ***Freedesktop.org***
      
        *  [direct link to zip](http://bosmans.ch/pulseaudio/pulseaudio-1.1.zip)
