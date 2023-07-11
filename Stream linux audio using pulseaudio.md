@@ -75,6 +75,7 @@ Setting up the Linux side of this is really easy:
    ```
    IPv4 Address. . . . . . . . . . . : they.will.be.here
    ```
+<br>
 
 ## PulseAudio on Windows
 
