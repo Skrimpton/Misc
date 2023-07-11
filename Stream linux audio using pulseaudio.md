@@ -5,7 +5,8 @@
  </div>
  
 ## Guide - Table of contents:
-* [PulseAudio on linux](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#pulseaudio-on-linux)
+* [PulseAudio on Linux](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#pulseaudio-on-linux)
+  
 * [Windows](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#windows)
   * [Find IP-Adress of server](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#finding-the-ip-adress-for-the-server)
   * [PulseAudio on windows](https://github.com/Skrimpton/Misc/blob/main/Stream%20linux%20audio%20using%20pulseaudio.md#pulseaudio-on-windows)
