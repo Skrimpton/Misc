@@ -9,9 +9,12 @@ This is how I used to stream audio from my NUC running Linux to my Windows deskt
 ## Options:
 There are a few options for getting audio from Linux to Windows:
 
-   * Using an actual cable - this doesn’t work when you have more devices than you have line in jacks, and you tend to get analog noise
-   * Using JACK - this is rather more complicated than I would like, and doesn’t integrate very well with the Linux or Windows ends
-   * Using PulseAudio - the Windows port of PulseAudio isn’t as well maintained as I’d like, but this integrates well with Linux
+   * Using an actual cable
+     - this doesn’t work when you have more devices than you have line in jacks, and you tend to get analog noise
+   * Using JACK
+     - this is rather more complicated than I would like, and doesn’t integrate very well with the Linux or Windows ends
+   * Using PulseAudio
+     - the Windows port of PulseAudio isn’t as well maintained as I’d like, but this integrates well with Linux
 
 Given these choices, I ended up using PulseAudio.
 
@@ -69,7 +72,7 @@ I use NSSM to run arbitrary programs as services.
 * Download the latest version of NSSM.
 * Extract it and copy nssm.exe from the win32 folder to:
     ```
-    c:\pulse.
+    c:\pulse
     ```
 * Run:
     ```
